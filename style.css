@@ -1,15 +1,64 @@
-﻿vendor/* GENERAL */
+﻿body {
+    padding-top: 75px;
+    padding-bottom: 20px;
+    background-color: #EDEFF3FF;
+    margin-right: 0 !important;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 450px;
+}
+
+.navbar-nav > li > .dropdown-menu {
+    margin-top: 12px;
+    min-width: 250px;
+}
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+    color: #fff;
+    text-decoration: none;
+    background-color: #33304c;
+}
+
+
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'sans-serif', Helvetica, serif;
+    color: #333333FF;;
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'sans-serif', Helvetica, serif;
+    color: #333333FF;
 }
 
 h1 {
     font-weight: 300;
     font-size: 48px;
+}
+
+p {
+    font-family: "sans-serif", Helvetica;
+}
+
+label {
+    font-family: "sans-serif", Helvetica;
+    font-weight: bold;
 }
 
 .itotem-page-header {
@@ -22,19 +71,20 @@ h1 {
 }
 
 .btn {
-    color: #51bf93;
+    color: #2F223EFF;
     display: inline-block;
     padding: 6px 12px;
     margin-bottom: 0;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: normal;
     line-height: 1.428571429;
     text-align: center;
     white-space: nowrap;
     vertical-align: middle;
     cursor: pointer;
-    border: 1px solid #51bf93;
-    border-radius: 4px;
+    border: 1px solid #2F223EFF;
+    font-family:  'sans-serif', Helvetica;
+    border-radius: 25px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -42,51 +92,48 @@ h1 {
     user-select: none;
     text-overflow: ellipsis;
     overflow: hidden;
+    margin: 5px;
 }
 
 .btn-flow {
-
+    
 }
 
 .btn-primary {
-    background-color: #389ca0;
-    border-color: #318084;
-    color: #fff;
+    background-color: #2F223EFF;
+    color: #FFFFFFFF;
 }
 .btn-primary:focus {
-    background-color: #389ca0;
-    border-color: #318084;
-    color: #fff;
+    background-color: #2F223EFF;
+    color: #FFFFFFFF;
 }
 .btn-primary:hover {
-    background-color: #4db7bb;
-    border-color: #318084;
+    background-color: #685175;
+    border-color: #685175;
 }
 .btn-primary:active {
-    background-color: #2f7a7d;
-    border-color: #318084;
+    background-color: #685175;
+    border-color: #685175;
 }
 
 .btn-secondary {
-    /*background-color: #1e1c25;*/
-    border-color: #4db7bb;
-    color: #4db7bb;
+    border-color: #2F223EFF;
+    color: #2F223EFF;
     background-color: unset;
 }
 .btn-secondary:focus {
-    /*background-color: #1e1c25;*/
-    border-color: #4db7bb;
-    color: #4db7bb;
+    border-color: #2F223EFF;
+    color: #2F223EFF;
 }
 .btn-secondary:hover {
-    background-color: #389ca0;
-    border-color: #389ca0;
-    color: #fff;
+    background-color: unset;
+    border-color: #685175;
+    color: #685175;
 }
 .btn-secondary:active {
-   background-color: #2f7a7d;
-    border-color: #318084;
-    color: #fff;
+    background-color: unset;
+    border-color: #685175;
+    color: #685175;
 }
 
 .tall-row {
@@ -196,26 +243,35 @@ a:hover, a:visited, a:link, a:active {
     border-collapse: collapse;
     width: 100%;
     margin-top: 25px;
+    box-shadow: 0 0 6px #CCCCCCFF;
 }
 
 #clientsTable td, #clientsTable th {
-    border: none;
+    border-top: 1.5px solid #CCCCCCFF;
+    font-family: "sans-serif", Helvetica;
     /*padding: 15px;*/
 }
 
-#clientsTable tr:nth-child(even) {
-    background-color: #f2f2f2;
+#clientsTable tr {
+    background-color: #ffffffff;
 }
 
-#clientsTable tr:hover {
-    background-color: #ddd;
+/* #clientsTable tr:nth-child(even) {
+    background-color: #ffffffff;
+} */
+
+#clientsTable .link-row:hover {
+    background-color: #F6F8FAFF;
+    box-shadow: 0 0 6px #CCCCCCFF inset;
+    border-left: #53be93 solid 5px;
 }
 
 #clientsTable th {
     padding: 15px;
     text-align: left;
-    background-color: #1D1A2C;
-    color: white;
+    background-color: #EDEFF3FF;
+    color: #333333FF;
+    font-family: "san-serif", Helvetica;
 }
 
 #landingPageLogo {
@@ -227,7 +283,7 @@ a:hover, a:visited, a:link, a:active {
 /* TOP NAVIGATION */
 
 #topNavigation {
-    background-color: #1D1A2C;
+    background-color: #EDEFF3FF;
     min-height: 75px;
     margin-left: 250px;
 }
@@ -254,7 +310,7 @@ a:hover, a:visited, a:link, a:active {
     float: left;
     width: 250px;
     text-align: center;
-    background-color: #332E4C;
+    background-color: #FFFFFF;
     height: 75px;
     margin-left: -250px;
 }
@@ -279,6 +335,7 @@ a:hover, a:visited, a:link, a:active {
 
 #page-content-wrapper {
     width: 100%;
+    background: #EDEFF3FF;
 }
 
 .page-content {
@@ -295,7 +352,7 @@ a:hover, a:visited, a:link, a:active {
 }
 
 .sidebar-nav a {
-    font-size: 16px;
+    font-size: 18px;
     color: #3A3A3A;
 }
 
@@ -309,12 +366,10 @@ a:hover, a:visited, a:link, a:active {
     margin: 0;
     padding: 0;
     width: 200px;
-    border: 1px solid #555;
 }
 
 .sidebar-nav li {
     text-align: center;
-    border-bottom: 1px solid #555;
 }
 
 .sidebar-nav li:last-child {
@@ -323,20 +378,21 @@ a:hover, a:visited, a:link, a:active {
 
 .sidebar-nav li a {
     display: block;
-    color: #000;
+    color: #333333FF;
     padding: 8px 16px;
     text-decoration: none;
-    background-color: #389ca0;
+    background-color: #FFFFFFFF;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .sidebar-nav li a.active {
-    background-color: #51bf93;
-    color: white;
+    background-color: #FFFFFFFF;
+    color: #5AB88CFF;
 }
 
 .sidebar-nav li a:hover:not(.active) {
-    background-color: #51bf93;
-    color: white;
+    background-color: #F6F8FAFF;
+    color: #333333FF;
 }
 
 
@@ -576,8 +632,28 @@ a:hover, a:visited, a:link, a:active {
     margin-bottom: 15px;
 }
 
+.form-control{
+  font-family: 'sans-serif', Helvetica;
+  background-color: #FFFFFFFF;
+  border: 1px solid #999999FF;
+  border-radius:  5px;
+  color: #999999FF;
+  padding: 5px 5px;
+}
+
+.form-control:focus {
+  background-color: #FFFFFFFF;
+  border: 1px solid #999999FF;
+  border-radius:  5px;
+  outline: none;
+  color: #333333FF;
+  padding: 5px 5px;
+}
+
 .control-label {
-    font-size: 16px;
+    font-size: 18px;
+    font-family: 'sans-serif', Helvetica;
+    color: #2F223EFF;
 }
 
 .instruction-label {
